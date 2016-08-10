@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@mipmap/facebookb"
+    tools:context="com.example.aman.myfirstapplication.MyFirstActivity">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/etusername"
+        android:background="#fefcfc"
+        android:layout_above="@+id/etpassword"
+        android:hint="Username"
+        android:layout_alignLeft="@+id/etpassword"
+        android:layout_alignStart="@+id/etpassword"
+        android:layout_alignRight="@+id/etpassword"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignEnd="@+id/etpassword" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@mipmap/logo"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/etusername"
+        android:layout_alignStart="@+id/etusername"
+        android:layout_alignRight="@+id/etusername"
+        android:layout_alignEnd="@+id/etusername"
+        android:layout_above="@+id/etusername" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etpassword"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#fcfafa" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/btlogin"
+        android:layout_below="@+id/etpassword"
+        android:layout_alignLeft="@+id/etpassword"
+        android:layout_alignStart="@+id/etpassword"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignRight="@+id/etpassword"
+        android:layout_alignEnd="@+id/etpassword" />
+</RelativeLayout>
